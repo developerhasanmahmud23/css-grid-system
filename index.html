@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disigning Calender With CSS Grid</title>
+    <style>
+        .calender {
+            height: 400px;
+            width: 400px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            font-size: 16px;
+            grid-gap: 4px;
+
+        }
+
+        .calender div {
+            border: 1px solid lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        #another-month {
+            color: lightgrey;
+        }
+
+        #days {
+            background-color: rgb(29, 80, 77);
+            color: white;
+        }
+
+        #month-name {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            display: flex;
+            justify-content: start;
+            padding-left: 10px;
+            color: rgb(29, 80, 77);
+            background-color: rgb(240, 239, 239);
+
+        }
+
+        #today {
+            border: 1px solid rgb(29, 80, 77);
+            color: rgb(29, 80, 77);
+        }
+
+        #next-sign {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(240, 239, 239);
+            color: rgb(29, 80, 77);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="calender">
+
+        <div id="month-name">Janurary</div>
+        <div id="next-sign">
+            >
+        </div>
+        <div id="days">S</div>
+        <div id="days">F</div>
+        <div id="days">T</div>
+        <div id="days">W</div>
+        <div id="days">T</div>
+        <div id="days">M</div>
+        <div id="days">S</div>
+        <div id="another-month">29</div>
+        <div id="another-month">30</div>
+        <div id="another-month">31</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div id="today">11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+        <div>29</div>
+        <div>30</div>
+        <div id="another-month">1</div>
+        <div id="another-month">2</div>
+
+    </div>
+
+</body>
+
+</html>
