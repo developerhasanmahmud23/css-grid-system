@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background-color: lightgreen;
+        }
+
+        #search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 50px;
+            border: 2px solid lightgray;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login input{
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+
+        #submit{
+            font-weight: bold;
+
+        }
+
+        #submit:hover{
+            cursor: grab;
+            background-color: lightgreen;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+
+            <span id="search-bar">
+                <input type="search" name="" placeholder="search anything" id="">
+            </span>
+
+            <span id="menu-items">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Courses</a>
+                <a href="">Blog</a>
+                <a href="">Contact Us</a>
+            </span>
+
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="login">
+            <h2>Login</h2>
+            <input type="email" name="" id="" placeholder="Type Email Here" required>
+            <input type="password" name="" id="" placeholder="Type Password">
+            <input type="button" value="Submit" id="submit">
+        </div>
+    </div>
+</body>
+
+</html>
